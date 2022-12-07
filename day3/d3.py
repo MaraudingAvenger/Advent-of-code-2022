@@ -10,9 +10,6 @@ def score(letter:str) -> int:
         return ord(letter) - 38
     return 0
 
-def cut_line(line:str) -> tuple[str,str]:
-    return 
-
 total = 0
 for line in lines:
     left, right = line[:len(line)//2], line[len(line)//2:]
