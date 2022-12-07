@@ -3,9 +3,7 @@ nums = [[[int(x) for x in pair.split('-')] for pair in line.split(',')] for line
 contained = 0
 for n in nums:
     a, b = n
-    if (a[0] <= b[0] and a[1] >= b[1]):
-        contained += 1
-    elif (a[0] >= b[0] and a[1] <= b[1]):
+    if (a[0] <= b[0] and a[1] >= b[1]) or (a[0] >= b[0] and a[1] <= b[1]):
         contained += 1
 
 print(contained)
